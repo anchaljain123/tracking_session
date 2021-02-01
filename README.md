@@ -8,3 +8,14 @@ Application for recording user session
 *Nodejs
 *Express
 *Mongodb
+
+### setup:
+Inside client directory
+```
+npm i 
+```
+Inside root level
+```
+npm i
+npm run dev
+```
