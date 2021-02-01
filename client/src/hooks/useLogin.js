@@ -30,7 +30,6 @@ const useLogin = () => {
     };
 
     const signout = () => {
-        console.log("loggin out...")
         removeItem("user-session");
         dispatch(logoutUser());
     }

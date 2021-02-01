@@ -2,6 +2,13 @@
     display: flex;
     justify-content: space-between;
 }
+.table-wrapper {
+    margin: 10px;
+}
+.table-wrapper .heading{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
 .table-row {
     display: flex;
     width: calc(100% - 20px);

@@ -35,7 +35,6 @@ router.get('/cb', (req, res) => {
                 //return searchController.saveResult(result.body.items, res);  
             })
             .then(data => {
-                console.log('>>', data, '=========data');
 				res.redirect('/dashboard');
             })
 			.catch((err) => res.send(err));

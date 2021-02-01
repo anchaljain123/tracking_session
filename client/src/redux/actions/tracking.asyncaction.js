@@ -23,7 +23,6 @@ export const asyncGetAllSessions = payload => {
     return dispatch => {
         return POST('/api/tracking/get', payload)
             .then(({ data }) => {
-                console.log("asyncGetAllSessions api response => ", data.sessions)
                 dispatch(asyncGetSessionsSuccess(data.sessions))
             })
             .catch((err) => {
