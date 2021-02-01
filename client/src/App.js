@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import CustomRoute from "./components/CustomRoute";
+import { Switch, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//Pages
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+import Dashboard from "./components/Dashboard"
+//Hooks
+import useLogin from "./hooks/useLogin";
+import useSignup from "./hooks/useSignup";
+
+const App = () => {
+	const { doLogin } = useLogin();
+	const doSignup = useSignup();
+
+	return (
+		<div className="App">
+			<Switch>
+				<Route path="/login">
+					<Login onSubmit={doLogin} />
+				</Route>
+				<Route path="/signup">
+					<Signup onSubmit={doSignup} />
+				</Route>
+				<CustomRoute path="/dashboard" >
+					<Dashboard />
+				</CustomRoute>
+			</Switch>
+		</div >
+	);
 }
 
 export default App;

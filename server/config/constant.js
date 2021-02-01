@@ -1,0 +1,3 @@
+exports.PORT = 4000;
+exports.CLIENTID = '361765a35479f026ec53';
+exports.SECRETKEY = '7be403c95b51d00122870b7a303ae0a7f3b5fc61';

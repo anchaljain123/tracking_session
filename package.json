@@ -2,16 +2,18 @@
     "name": "isomorphic-app",
     "version": "1.0.0",
     "scripts": {
-        "start": "node server.js",
+        "start": "node server/index.js",
         "client": "cd client && yarn start",
-        "server": "nodemon server.js",
+        "server": "nodemon server/index.js",
         "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
         "dev:server": "cd client && yarn build && cd .. && yarn start",
         "prod": "NODE_ENV=production yarn dev:server"
     },
     "dependencies": {
         "body-parser": "^1.18.3",
-        "express": "^4.16.4"
+        "express": "^4.16.4",
+        "mongoose": "^5.11.14",
+        "superagent": "^6.1.0"
     },
     "devDependencies": {
         "concurrently": "^4.0.1",

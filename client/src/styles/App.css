@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid teal;
+  margin: 5px 0;
+  width: 50%;
+}
+
+button {
+  padding: 7px;
+  min-width: 100px;
+  color: #fff;
+  background: teal;
+  border-radius: 5px;
+  border: none;
+  margin: 5px 10px;
+}
+
+form {
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+}
+
+form>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}

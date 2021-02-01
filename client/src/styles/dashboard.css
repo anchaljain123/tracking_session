@@ -1,0 +1,20 @@
+.top-section {
+    display: flex;
+    justify-content: space-between;
+}
+.table-row {
+    display: flex;
+    width: calc(100% - 20px);
+    margin: 0 10px;
+}
+.table-col {
+    padding: 5px;
+    width: 25%;
+    border: 1px solid;
+
+}
+.time {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
+}
