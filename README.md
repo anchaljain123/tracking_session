@@ -2,12 +2,12 @@
 Application for recording user session 
 
 ### Techstack:
-*Reactjs
-*Redux
-*Redux thunk
-*Nodejs
-*Express
-*Mongodb
+* Reactjs
+* Redux
+* Redux thunk
+* Nodejs
+* Express
+* Mongodb
 
 ### setup:
 Inside client directory
